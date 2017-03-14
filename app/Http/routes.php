@@ -47,15 +47,31 @@ Route::get('laravel-version', function()
 |
 */
 
-//Route::group(['middleware' => 'web'], function () {
     Route::auth();
+
+
     Route::post('change-password', 'Auth\AuthController@updatePassword');
-    Route::get( 'change-password', 'Auth\AuthController@updatePassword');
+    Route::get('change-password', 'Auth\AuthController@updatePassword');
+
+    Route::get('/control', 'RegisterController@index');
+    Route::get('/login', 'Auth\AuthController@authenticated');
 
     Route::get('/home', 'HomeController@index');
-    Route::get('/home', 'HomeController@display');
-    Route::resource('users', 'UsersController');
-    Route::resource('roles', 'RolesController');
+
+    Route::get('/about', 'HomeController@display');
+Route::resource('users', 'UsersController');
+Route::resource('roles', 'RolesController');
+
+Route::resource('admin', 'AdminController');
+Route::resource('referee', 'RefereeController');
+Route::resource('coach', 'CoachController');
+Route::resource('player', 'PlayerController');
+Route::resource('schools', 'SchoolController');
+Route::resource('teams', 'TeamController');
+Route::get('/control', 'RegisterController@index');
+Route::auth();
+Route::get('/control', 'RegisterController@index');
+
 
 
 
