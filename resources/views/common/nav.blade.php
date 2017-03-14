@@ -18,12 +18,15 @@
             </a> -->
               <!--  Buttons at navbar -->
              <ul class="nav navbar-nav">
+
                  <li class="active"><a href="{{url('/')}}"><h2 style="font-size:25px"><b>Home</b></h2> <span class="sr-only">(current)</span></a></li>
                  <li><a href="{{action('HomeController@display')}}"><h2 style="font-size:25px"><b>About MSA</b></h2></a></li>
             <li><a href="#"><h2 style="font-size:25px"><b>Table</b></h2></a></li>
             <li><a href="#"><h2 style="font-size:25px"><b>Stats</b></h2></a></li>
             <li><a href="{{ action('SchoolController@index') }}"><h2 style="font-size:25px"><b>Schools</b></h2></a></li>
             <li><a href="{{ action('TeamController@index') }}"><h2 style="font-size:25px"><b>Teams</b></h2></a></li>
+                 <li><a href="{{ action('PlayerController@index') }}">Player</a></li>
+
             </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">

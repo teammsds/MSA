@@ -77,4 +77,3 @@ class SchoolController extends Controller
     }
 
 }
-

@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Team extends Model
 {
     protected $fillable=[
-        'school_id',
         'tm_number',
         'tm_name',
         'tm_coach',
@@ -21,7 +20,7 @@ class Team extends Model
         return $this->belongsTo('App\School');
     }
 
-    public function players()
+    public function player()
     {
         return $this->hasMany('App\Player');
     }
