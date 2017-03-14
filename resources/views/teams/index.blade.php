@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
     <h1>Teams</h1>
     <h4> Check your team in the List</h4>

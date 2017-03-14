@@ -24,6 +24,7 @@
             <li><a href="#">Stats</a></li>
             <li><a href="{{ action('SchoolController@index') }}">School</a></li>
             <li><a href="{{ action('TeamController@index') }}">Team</a></li>
+                 <li><a href="{{ action('PlayerController@index') }}">Player</a></li>
             </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">

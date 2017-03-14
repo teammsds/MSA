@@ -1,7 +1,4 @@
 @extends('layouts.app')
-<body>
-
-</body>
 @section('content')
     <div>
     <h1>Schools</h1>

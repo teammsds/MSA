@@ -20,7 +20,7 @@ class Team extends Model
         return $this->belongsTo('App\School');
     }
 
-    public function players()
+    public function player()
     {
         return $this->hasMany('App\Player');
     }
